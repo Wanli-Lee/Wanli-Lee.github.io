@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanli Li</title>
+<meta name="description" content="Wanli Li — PhD student at Zhejiang University. Agentic RL, Computer-Use Agents, Multimodal Generation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=15">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="#top" class="nav-home">Homepage</a>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#news">News</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#honors">Honors</a>
+  </div>
+</nav>
+
+<div class="layout" id="top">
+
+  <aside class="sidebar">
+    <div class="author">
+      <div class="author-avatar">
+        <img src="assets/avatar.jpg" alt="Wanli Li">
+      </div>
+      <h1 class="author-name">Wanli Li <span class="cn">李万里</span></h1>
+      <p class="author-affil">PhD Student,<br>Zhejiang University</p>
+      <p class="author-affil-sub">State Key Lab of CAD&amp;CG</p>
+      <ul class="author-links">
+        <li><a href="mailto:wanli_li@zju.edu.cn">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=L-PzJfQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://github.com/Wanli-Lee" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="assets/CV.pdf" target="_blank" rel="noopener">CV</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="content">
+
+  <section class="about" id="about">
+    <p class="bio">
+      My research interest lies in the intersection of <strong>Reinforcement Learning</strong>, <strong>Reasoning</strong>
+      and <strong>Machine Learning Systems</strong>, with their applications in complex, real-world environments.
+      My long-term goal is to create an <strong>autonomous decision-making system</strong> that can act intelligently
+      in any unknown environment.
+      I am advised by <a href="https://bo-zhang.me/" target="_blank" rel="noopener">Prof. Bo Zhang</a>.
+    </p>
+    <p class="bio">
+      I am also interested in <strong>multimodal generation</strong> and its alignment.
+      Currently a research intern at
+      Microsoft Research Asia,
+      previously at <span class="nowrap">BAAI</span> and SimplexAI.
+    </p>
+    <p class="bio bio-cta">
+      I'm always open to research collaboration. Feel free to <a href="mailto:wanli_li@zju.edu.cn">reach out</a> if you'd like to work together.
+    </p>
+  </section>
+
+  <section class="pubs" id="research">
+    <h2>Research</h2>
+    <p class="research-note">My work spans three threads. <span class="cofirst">*</span> denotes equal contribution.</p>
+
+    <!-- THREAD 1 -->
+    <div class="thread">
+      <h3 class="thread-title">Agentic Reinforcement Learning</h3>
+      <p class="thread-desc">Training agents to reason and act over long horizons with scalable, stable RL.</p>
+
+      <div class="pub">
+        <div class="pub-thumb"><img src="assets/fig_litere.png" alt="LiteResearcher"></div>
+        <div class="pub-body">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2604.17931" target="_blank" rel="noopener">LiteResearcher: Scalable Agentic RL Training for Deep Research Agents</a></p>
+          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
+          <p class="pub-venue"><span class="badge first">First Author</span> Preprint 2026</p>
+          <p class="pub-tldr">A scalable Agentic RL framework whose 4B model reaches open-source SOTA on GAIA (71.3%) and Xbench-DS (78.0%), rivaling commercial systems.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2604.17931" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://simplex-ai-inc.github.io/LiteResearcher/" target="_blank" rel="noopener">Webpage</a> <span class="sep">·</span> <a href="https://github.com/simplex-ai-inc/LiteResearcher" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B" target="_blank" rel="noopener">Model</a> <span class="sep">·</span> <a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B-SFT" target="_blank" rel="noopener">SFT Model</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Data" target="_blank" rel="noopener">Data</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Corpus" target="_blank" rel="noopener">Corpus</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREAD 2 -->
+    <div class="thread">
+      <h3 class="thread-title">Generalist Computer-Use Agents</h3>
+      <p class="thread-desc">Agents that operate real desktops across GUI, CLI and code — and how we evaluate them.</p>
+
+      <div class="pub">
+        <div class="pub-thumb"><img src="assets/fig_weave.png" alt="WeaveBench"></div>
+        <div class="pub-body">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2606.09426" target="_blank" rel="noopener">WeaveBench: Benchmarking Hybrid-Interface Computer-Use Agents</a></p>
+          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
+          <p class="pub-venue"><span class="badge first">First Author</span> Preprint 2026</p>
+          <p class="pub-tldr">A long-horizon benchmark of 114 hybrid-interface tasks forcing GUI and CLI/code to cooperate — the best agent reaches only 41.2% success.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2606.09426" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://weavebench.github.io/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/wanlilll/WeaveBench" target="_blank" rel="noopener">Dataset</a></p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-thumb"><img src="assets/fig_stlite.png" alt="ST-Lite"></div>
+        <div class="pub-body">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">ST-Lite: Training-Free KV Cache Compression for Efficient GUI Agents</a></p>
+          <p class="pub-authors"><strong>Wanli Li</strong><span class="cofirst">*</span>, et al.</p>
+          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> Preprint 2026</p>
+          <p class="pub-tldr">A training-free KV cache compression for GUI agents, giving 2.45× decoding speedup and +7.3% success on long-horizon tasks.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">Paper</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREAD 3 -->
+    <div class="thread">
+      <h3 class="thread-title">Multimodal Generation</h3>
+      <p class="thread-desc">Unified multimodal models and RL alignment for generation.</p>
+
+      <div class="pub">
+        <div class="pub-thumb"><img src="assets/fig_omnigen2.png" alt="OmniGen2"></div>
+        <div class="pub-body">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">OmniGen2: Towards Instruction-Aligned Multimodal Generation</a></p>
+          <p class="pub-authors"><strong>Wanli Li</strong> (Core Contributor), et al.</p>
+          <p class="pub-venue"><span class="badge conf">CVPR 2026</span> <span class="cite">332 Citations · 4.1k GitHub Stars</span></p>
+          <p class="pub-tldr">A unified multimodal generation model; I built the in-context data pipeline and led the progressive Flow-GRPO RL alignment.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/OmniGen2/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/VectorSpaceLab/OmniGen2" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/OmniGen2/OmniGen2" target="_blank" rel="noopener">Model</a></p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-thumb"><img src="assets/fig_tempflow.png" alt="TempFlow-GRPO"></div>
+        <div class="pub-body">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2508.04324" target="_blank" rel="noopener">TempFlow-GRPO: When Timing Matters for GRPO in Flow Models</a></p>
+          <p class="pub-authors"><strong>Wanli Li</strong> (Core Contributor), et al.</p>
+          <p class="pub-venue"><span class="badge conf">ICLR 2026</span></p>
+          <p class="pub-tldr">A temporally-aware RL framework for flow-matching models, using trajectory branching and noise-aware weighting for stabler alignment.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2508.04324" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://tempflowgrpo.github.io/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/Shredded-Pork/TempFlow-GRPO" target="_blank" rel="noopener">Code</a></p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-thumb"><img src="assets/fig_sail.png" alt="SAIL"></div>
+        <div class="pub-body">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2602.05380" target="_blank" rel="noopener">SAIL: Self-Amplified Iterative Learning for Diffusion Model Alignment</a></p>
+          <p class="pub-authors"><strong>Wanli Li</strong><span class="cofirst">*</span>, et al.</p>
+          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> ICLR 2026</p>
+          <p class="pub-tldr">A self-amplified iterative framework that aligns diffusion models from minimal seed data, letting the model act as its own teacher.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2602.05380" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://openreview.net/forum?id=wKdg1DDOrW" target="_blank" rel="noopener">OpenReview</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <h2>News</h2>
+    <ul>
+      <li><span class="date">2026.03</span> Started a research internship at <strong>Microsoft Research Asia</strong>.</li>
+      <li><span class="date">2026.02</span> <em>OmniGen2</em> accepted by <strong>CVPR 2026</strong>.</li>
+      <li><span class="date">2026.01</span> <em>SAIL</em> and <em>TempFlow-GRPO</em> accepted by <strong>ICLR 2026</strong>.</li>
+      <li><span class="date">2025.09</span> Started my PhD at <strong>Zhejiang University</strong>.</li>
+    </ul>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>Experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-logo"><img src="assets/msra.svg" alt="MSRA"></div>
+      <div class="exp-body">
+        <div class="exp-head">
+          <span class="exp-org">Microsoft Research Asia</span>
+          <span class="exp-date">Mar 2026 – Present</span>
+        </div>
+        <p class="exp-role">Research Intern · Shanghai AI/ML Group</p>
+        <p class="exp-desc">Full-stack hybrid-interface Computer-Use Agents: VM sandbox infra, fully-async Agentic RL training, and the <strong>WeaveBench</strong> benchmark.</p>
+        <p class="exp-mentor">Advisors: <a href="https://scholar.google.com/citations?user=-knurggAAAAJ&hl=en" target="_blank" rel="noopener">Caihua Shan</a>, <a href="https://scholar.google.com/citations?user=u6QK7AkAAAAJ&hl=en" target="_blank" rel="noopener">Yifan Yang</a></p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-logo"><img src="assets/simplexai_li.png" alt="SimplexAI"></div>
+      <div class="exp-body">
+        <div class="exp-head">
+          <span class="exp-org">SimplexAI</span>
+          <span class="exp-date">May 2025 – Mar 2026</span>
+        </div>
+        <p class="exp-role">Research Intern · Agentic RL Team — First Author / Project Lead</p>
+        <p class="exp-desc">Led <strong>LiteResearcher</strong>, an open-source SOTA 4B deep-research model trained with scalable Agentic RL over a local search world.</p>
+        <p class="exp-mentor">Advisors: <a href="https://bo-zhang.me/" target="_blank" rel="noopener">Bo Zhang</a>, <a href="https://panzhang0212.github.io/" target="_blank" rel="noopener">Pan Zhang</a></p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-logo"><img src="assets/baai_li.png" alt="BAAI"></div>
+      <div class="exp-body">
+        <div class="exp-head">
+          <span class="exp-org">BAAI</span>
+          <span class="exp-date">Nov 2024 – May 2025</span>
+        </div>
+        <p class="exp-role">Research Intern · VectorSpaceLab — Core Contributor</p>
+        <p class="exp-desc">Core contributor to <strong>OmniGen2</strong> (4k★): the in-context data pipeline and progressive Flow-GRPO RL alignment.</p>
+        <p class="exp-mentor">Advisors: <a href="https://scholar.google.com/citations?user=k2SF4M0AAAAJ&hl=en" target="_blank" rel="noopener">Zheng Liu</a>, <a href="https://scholar.google.com/citations?user=P2Q2wZEAAAAJ&hl=en" target="_blank" rel="noopener">Shitao Xiao</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-row">
+      <span class="skill-key">Research</span>
+      <span class="skill-val">Large-scale Model Training · Agentic RL · Agent Framework Development · Inference Optimization</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-key">Languages</span>
+      <span class="skill-val">Python · C/C++ · LaTeX</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-key">Frameworks</span>
+      <span class="skill-val">PyTorch · veRL · slime · vLLM · SGLang · DeepSpeed · TensorRT-LLM · Docker</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-key">Infra</span>
+      <span class="skill-val">Kubernetes · Milvus · PostgreSQL · BGE-M3 · large-scale async rollout</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-key">AI Tooling</span>
+      <span class="skill-val">Claude Code · Codex · Cursor · GitHub Copilot — rebuilding research &amp; engineering workflows around LLM agents</span>
+    </div>
+  </section>
+
+  <section class="misc" id="education">
+    <h2>Education</h2>
+    <ul class="edu">
+      <li>
+        <span class="edu-logo"><img src="assets/zju.png" alt="ZJU"></span>
+        <span class="edu-text"><strong>Zhejiang University</strong> — PhD in Computer Science, State Key Lab of CAD&amp;CG <span class="edu-date">2025 – Present</span><br><span class="edu-advisor">Advised by <a href="https://bo-zhang.me/" target="_blank" rel="noopener">Prof. Bo Zhang</a></span></span>
+      </li>
+      <li>
+        <span class="edu-logo"><img src="assets/dlut.png" alt="DLUT"></span>
+        <span class="edu-text"><strong>Dalian University of Technology</strong> — BEng in Artificial Intelligence, IIAU Lab <span class="edu-date">2021 – 2025</span><br><span class="edu-advisor">Advised by <a href="https://scholar.google.com/citations?user=D3nE0agAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Huchuan Lu</a> and <a href="https://scholar.google.com/citations?user=EfTwkXMolscC&hl=en" target="_blank" rel="noopener">Prof. Lijun Wang</a></span></span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="misc" id="honors">
+    <h2>Honors</h2>
+    <ul class="honors">
+      <li>National Silver Award, China International College Students' Innovation Competition (&ldquo;Internet+&rdquo;), 2023</li>
+      <li>National Scholarship (Top 1%) — Ministry of Education, 2022 &amp; 2025</li>
+      <li>Yulan Scholarship (Top 10 university-wide, highest honor) — DUT, 2024</li>
+      <li>Outstanding Graduate of Liaoning Province, 2024</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Last updated June 2026 · Built with plain HTML/CSS.</p>
+  </footer>
+
+  </main>
+</div>
+</body>
+</html>
