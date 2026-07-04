@@ -156,6 +156,34 @@ section { margin-bottom: 44px; }
   padding-top: 2px;
 }
 
+/* ---------- TALKS ---------- */
+.talks ul { list-style: none; }
+.talks li {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 6px 18px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+}
+.talks li:last-child { border-bottom: none; }
+.talk-date {
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.86rem;
+}
+.talk-title {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.talk-venue {
+  text-align: right;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--soft);
+}
+
 /* ---------- RESEARCH ---------- */
 .research-note {
   font-size: 0.92rem;
@@ -412,4 +440,6 @@ footer {
   .pub-thumb img { max-width: 100%; }
   .pub-body { max-width: 100%; padding-left: 0; }
   .date { min-width: 52px; }
+  .talks li { grid-template-columns: 52px 1fr; }
+  .talk-venue { grid-column: 2; text-align: left; }
 }
