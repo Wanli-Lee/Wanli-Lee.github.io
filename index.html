@@ -7,8 +7,8 @@
 <meta name="description" content="Wanli Li — PhD student at Zhejiang University. Agentic RL, Computer-Use Agents, Multimodal Generation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=15">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Fraunces:ital,opsz,wght,WONK@0,9..144,300..900,0;0,9..144,300..900,1;1,9..144,300..900,0&family=Newsreader:ital,opsz,wght@0,6..72,200..600;1,6..72,200..600&family=Space+Mono:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=28">
 </head>
 <body>
 
@@ -16,8 +16,8 @@
   <div class="topnav-inner">
     <a href="#top" class="nav-home">Homepage</a>
     <a href="#about">About</a>
-    <a href="#research">Research</a>
     <a href="#news">News</a>
+    <a href="#research">Research</a>
     <a href="#talks">Talks</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
@@ -48,20 +48,39 @@
 
   <section class="about" id="about">
     <p class="bio">
+      I am a first-year PhD candidate at the <strong>State Key Laboratory of CAD&amp;CG</strong>,
+      <strong>Zhejiang University</strong>. I earned my B.Eng. in Artificial Intelligence at the
+      <strong>IIAU Lab</strong>, <strong>Dalian University of Technology</strong>, in 2025.
+    </p>
+    <p class="bio">
       My research interest lies in the intersection of <strong>Reinforcement Learning</strong>, <strong>Reasoning</strong>
       and <strong>Machine Learning Systems</strong>, with their applications in complex, real-world environments.
       My long-term goal is to create an <strong>autonomous decision-making system</strong> that can act intelligently
-      in any unknown environment.
+      in any unknown environment. I am also interested in <strong>multimodal generation</strong> and its alignment.
     </p>
     <p class="bio">
-      I am also interested in <strong>multimodal generation</strong> and its alignment.
-      Currently a research intern at
-      Microsoft Research Asia,
-      previously at <span class="nowrap">BAAI</span> and SimplexAI.
+      Currently a research intern with the
+      <strong><span class="nowrap">Qwen Team</span> at Alibaba</strong>,
+      previously at <strong><span class="nowrap">MSRA</span></strong> and <strong>BAAI</strong>.
+      I'm also a community collaborator at
+      <a href="https://x.com/webagentlab" target="_blank" rel="noopener"><strong>WebAgentLab</strong></a>,
+      an open-source community around GUI and Computer-Use Agents.
     </p>
     <p class="bio bio-cta">
       I'm always open to research collaboration. Feel free to <a href="mailto:wanli_li@zju.edu.cn">reach out</a> if you'd like to work together.
     </p>
+  </section>
+
+  <section class="news" id="news">
+    <h2>News</h2>
+    <ul>
+      <li><span class="date">2026.08</span> Started a research internship with the <strong>Qwen Base Model Team</strong> at Alibaba, working on hybrid Computer-Use Agents and human–agent co-work.</li>
+      <li><span class="date">2026.07</span> <em>LiteResearcher</em> accepted by <strong>COLM 2026</strong>.</li>
+      <li><span class="date">2026.03</span> Started a research internship at <strong>Microsoft Research Asia</strong>.</li>
+      <li><span class="date">2026.02</span> <em>OmniGen2</em> accepted by <strong>CVPR 2026</strong>.</li>
+      <li><span class="date">2026.01</span> <em>SAIL</em> and <em>TempFlow-GRPO</em> accepted by <strong>ICLR 2026</strong>.</li>
+      <li><span class="date">2025.09</span> Started my PhD at <strong>Zhejiang University</strong>.</li>
+    </ul>
   </section>
 
   <section class="pubs" id="research">
@@ -81,6 +100,17 @@
           <p class="pub-venue"><span class="badge first">First Author</span> <span class="badge conf">COLM 2026</span></p>
           <p class="pub-tldr">A scalable Agentic RL framework whose 4B model reaches open-source SOTA on GAIA (71.3%) and Xbench-DS (78.0%), rivaling commercial systems.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2604.17931" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://simplex-ai-inc.github.io/LiteResearcher/" target="_blank" rel="noopener">Webpage</a> <span class="sep">·</span> <a href="https://github.com/simplex-ai-inc/LiteResearcher" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B" target="_blank" rel="noopener">Model</a> <span class="sep">·</span> <a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B-SFT" target="_blank" rel="noopener">SFT Model</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Data" target="_blank" rel="noopener">Data</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Corpus" target="_blank" rel="noopener">Corpus</a></p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-thumb"><img src="assets/fig_arex.png" alt="AREX"></div>
+        <div class="pub-body">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2607.21461" target="_blank" rel="noopener">AREX: Towards a Recursively Self-Improving Agent for Deep Research</a></p>
+          <p class="pub-authors">Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang, &hellip;, <strong>Wanli Li</strong>, et al.</p>
+          <p class="pub-venue"><span class="badge report">Tech Report</span> arXiv 2026</p>
+          <p class="pub-tldr">A recursively self-improving deep research agent that audits its own answer constraint-wise and relaunches targeted research; the 4B and 122B-A10B models lead comparable-scale baselines on BrowseComp, WideSearch and HLE.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2607.21461" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/arex-model/" target="_blank" rel="noopener">Homepage</a> <span class="sep">·</span> <a href="https://arex-research.com" target="_blank" rel="noopener">App</a> <span class="sep">·</span> <a href="https://huggingface.co/collections/BAAI/arex" target="_blank" rel="noopener">Models</a></p>
         </div>
       </div>
     </div>
@@ -153,17 +183,6 @@
     </div>
   </section>
 
-  <section class="news" id="news">
-    <h2>News</h2>
-    <ul>
-      <li><span class="date">2026.07</span> <em>LiteResearcher</em> accepted by <strong>COLM 2026</strong>.</li>
-      <li><span class="date">2026.03</span> Started a research internship at <strong>Microsoft Research Asia</strong>.</li>
-      <li><span class="date">2026.02</span> <em>OmniGen2</em> accepted by <strong>CVPR 2026</strong>.</li>
-      <li><span class="date">2026.01</span> <em>SAIL</em> and <em>TempFlow-GRPO</em> accepted by <strong>ICLR 2026</strong>.</li>
-      <li><span class="date">2025.09</span> Started my PhD at <strong>Zhejiang University</strong>.</li>
-    </ul>
-  </section>
-
   <section class="talks" id="talks">
     <h2>Talks</h2>
     <ul>
@@ -184,11 +203,24 @@
     <h2>Experience</h2>
 
     <div class="exp-item">
+      <div class="exp-logo"><img src="assets/qwen.png" alt="Qwen"></div>
+      <div class="exp-body">
+        <div class="exp-head">
+          <span class="exp-org">Qwen Team, Alibaba Group</span>
+          <span class="exp-date">Aug 2026 – Present</span>
+        </div>
+        <p class="exp-role">Research Intern · Base Model Team</p>
+        <p class="exp-desc">Hybrid Computer-Use Agents and human–agent <strong>co-work</strong>: agents that move fluidly across GUI, CLI and code while staying steerable by a human collaborator.</p>
+        <p class="exp-mentor">Advisors: <a href="https://gao-xiao-bai.github.io/" target="_blank" rel="noopener">Chang Gao</a>, Que Shen</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
       <div class="exp-logo"><img src="assets/msra.svg" alt="MSRA"></div>
       <div class="exp-body">
         <div class="exp-head">
           <span class="exp-org">Microsoft Research Asia</span>
-          <span class="exp-date">Mar 2026 – Present</span>
+          <span class="exp-date">Mar 2026 – Aug 2026</span>
         </div>
         <p class="exp-role">Research Intern · Shanghai AI/ML Group</p>
         <p class="exp-desc">Full-stack hybrid-interface Computer-Use Agents: VM sandbox infra, fully-async Agentic RL training, and the <strong>WeaveBench</strong> benchmark.</p>
@@ -265,14 +297,14 @@
     <h2>Honors</h2>
     <ul class="honors">
       <li>National Silver Award, China International College Students' Innovation Competition (&ldquo;Internet+&rdquo;), 2023</li>
-      <li>National Scholarship (Top 1%) — Ministry of Education, 2022 &amp; 2025</li>
+      <li>National Scholarship (Top 1%) — Ministry of Education, 2022 &amp; 2024</li>
       <li>Yulan Scholarship (Top 10 university-wide, highest honor) — DUT, 2024</li>
       <li>Outstanding Graduate of Liaoning Province, 2024</li>
     </ul>
   </section>
 
   <footer>
-    <p>Last updated July 2026 · Built with plain HTML/CSS.</p>
+    <p>Last updated August 2026 · Built with plain HTML/CSS.</p>
   </footer>
 
   </main>
