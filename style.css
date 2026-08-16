@@ -1,7 +1,8 @@
 /* =====================================================================
    Wanli Li — academic homepage
    Aesthetic: ink-on-paper, editorial serif, monochrome with blue pops
-   Fonts: Fraunces (display) · Newsreader (body) · Space Mono / Archivo (labels)
+   Fonts: Cormorant Garamond (name) · Playfair Display (display) · EB Garamond (body)
+          Space Mono / Archivo (labels)
    ===================================================================== */
 
 :root {
@@ -26,11 +27,11 @@
   --marker: rgba(224, 161, 43, 0.28);
 
   /* --- type --- */
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Newsreader", Georgia, serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "EB Garamond", Georgia, serif;
   --font-mono: "Space Mono", "SFMono-Regular", monospace;
   --font-ui: "Archivo", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-name: "Pacifico", "Fraunces", cursive;
+  --font-name: "Cormorant Garamond", Georgia, serif;
 
   --radius: 12px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -38,15 +39,20 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+/* Global type scale. Everything below is sized in rem, so this one number
+   grows/shrinks the whole page. 100% = the reader's own browser default. */
+html {
+  scroll-behavior: smooth;
+  font-size: 108%;
+}
 
 body {
   font-family: var(--font-body);
   color: var(--ink);
   background: var(--bg);
   line-height: 1.7;
-  font-size: 20px;
-  font-weight: 420;
+  font-size: 1.25rem;
+  font-weight: 450;
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -153,10 +159,11 @@ a:hover { border-bottom-color: var(--accent); }
 
 .author-name {
   font-family: var(--font-name);
-  font-size: 1.85rem;
-  font-weight: 400;
+  font-style: italic;
+  font-size: 2.6rem;
+  font-weight: 600;
   line-height: 1.15;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
   color: var(--ink);
   margin-bottom: 12px;
   padding: 0.06em 0.04em 0.12em;
@@ -164,6 +171,7 @@ a:hover { border-bottom-color: var(--accent); }
 .author-name .cn {
   display: block;
   font-family: var(--font-display);
+  font-style: normal;
   font-size: 1rem;
   font-weight: 400;
   color: var(--faint);
@@ -234,10 +242,9 @@ a:hover { border-bottom-color: var(--accent); }
 h2 {
   font-family: var(--font-display);
   font-size: 1.85rem;
-  font-weight: 450;
+  font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1.08;
-  font-variation-settings: "opsz" 30, "wght" 450, "WONK" 0;
   margin-bottom: 18px;
   padding-bottom: 10px;
   border-bottom: 2.5px solid var(--ink);
@@ -688,7 +695,8 @@ footer {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
-  body { font-size: 19px; }
+  html { font-size: 106%; }
+  body { font-size: 1.1875rem; }
   .topnav-inner { padding: 12px 20px; gap: 18px; overflow-x: auto; }
   .layout { flex-direction: column; padding: 32px 22px 60px; }
   .sidebar { width: 100%; position: static; margin-bottom: 36px; }
@@ -697,7 +705,8 @@ footer {
   .pub { grid-template-columns: 240px 1fr; gap: 1.2rem; }
 }
 @media (max-width: 560px) {
-  body { font-size: 18px; }
+  html { font-size: 103%; }
+  body { font-size: 1.125rem; }
   .pub { grid-template-columns: 1fr; gap: 0.8rem; }
   .pub-thumb { max-width: 260px; }
   .date { min-width: 52px; }
