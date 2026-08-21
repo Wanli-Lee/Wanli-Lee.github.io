@@ -7,7 +7,7 @@
 <meta name="description" content="Wanli Li — PhD student at Zhejiang University. Agentic RL, Computer-Use Agents, Multimodal Generation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Cormorant+Garamond:ital,wght@1,400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Fraunces:ital,opsz,wght,WONK@0,9..144,300..900,0;0,9..144,300..900,1;1,9..144,300..900,0&family=Newsreader:ital,opsz,wght@0,6..72,200..600;1,6..72,200..600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=33">
 </head>
 <body>
@@ -53,8 +53,10 @@
       <strong>IIAU Lab</strong>, <strong>Dalian University of Technology</strong>, in 2025.
     </p>
     <p class="bio">
-      My research interest lies in the intersection of <strong>Reinforcement Learning</strong>, <strong>Reasoning</strong>
-      and <strong>Machine Learning Systems</strong>, with their applications in complex, real-world environments.
+      My research centers on agents that act in real environments, in particular
+      <strong>Computer-Use Agents</strong> that move across GUI, CLI and code.
+      I work on <strong>Agentic RL</strong> training for these agents,
+      from <strong>algorithm design</strong> to the <strong>infrastructure</strong> that runs rollouts at scale.
       My long-term goal is to create an <strong>autonomous decision-making system</strong> that can act intelligently
       in any unknown environment. I am also interested in <strong>multimodal generation</strong> and its alignment.
     </p>
@@ -74,6 +76,7 @@
   <section class="news" id="news">
     <h2>News</h2>
     <ul>
+      <li><span class="date">2026.08</span> <em>WeaveBench</em> and <em>ST-Lite</em> accepted by <strong>EMNLP 2026</strong>.</li>
       <li><span class="date">2026.08</span> Started a research internship with the <strong>Qwen Team</strong> at Alibaba.</li>
       <li><span class="date">2026.07</span> <em>LiteResearcher</em> accepted by <strong>COLM 2026</strong>.</li>
       <li><span class="date">2026.03</span> Started a research internship at <strong>Microsoft Research Asia</strong>.</li>
@@ -108,7 +111,7 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2607.21461" target="_blank" rel="noopener">AREX: Towards a Recursively Self-Improving Agent for Deep Research</a></p>
           <p class="pub-authors">Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang, &hellip;, <strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge report">Tech Report</span> arXiv 2026</p>
+          <p class="pub-venue"><span class="badge contrib">Contributor</span> <span class="badge report">Tech Report</span></p>
           <p class="pub-tldr">A recursively self-improving deep research agent that audits its own answer constraint-wise and relaunches targeted research; the 4B and 122B-A10B models lead comparable-scale baselines on BrowseComp, WideSearch and HLE.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2607.21461" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/arex-model/" target="_blank" rel="noopener">Homepage</a> <span class="sep">·</span> <a href="https://arex-research.com" target="_blank" rel="noopener">App</a> <span class="sep">·</span> <a href="https://huggingface.co/collections/BAAI/arex" target="_blank" rel="noopener">Models</a></p>
         </div>
@@ -125,7 +128,7 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2606.09426" target="_blank" rel="noopener">WeaveBench: Benchmarking Hybrid-Interface Computer-Use Agents</a></p>
           <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge first">First Author</span> Preprint 2026</p>
+          <p class="pub-venue"><span class="badge first">First Author</span> <span class="badge conf">EMNLP 2026</span></p>
           <p class="pub-tldr">A long-horizon benchmark of 114 hybrid-interface tasks forcing GUI and CLI/code to cooperate — the best agent reaches only 41.2% success.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2606.09426" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://weavebench.github.io/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/wanlilll/WeaveBench" target="_blank" rel="noopener">Dataset</a></p>
         </div>
@@ -136,7 +139,7 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">ST-Lite: Training-Free KV Cache Compression for Efficient GUI Agents</a></p>
           <p class="pub-authors"><strong>Wanli Li</strong><span class="cofirst">*</span>, et al.</p>
-          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> Preprint 2026</p>
+          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> <span class="badge conf">EMNLP 2026</span></p>
           <p class="pub-tldr">A training-free KV cache compression for GUI agents, giving 2.45× decoding speedup and +7.3% success on long-horizon tasks.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">Paper</a></p>
         </div>
@@ -152,8 +155,8 @@
         <div class="pub-thumb"><img src="assets/fig_omnigen2.png" alt="OmniGen2"></div>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">OmniGen2: Towards Instruction-Aligned Multimodal Generation</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong> (Core Contributor), et al.</p>
-          <p class="pub-venue"><span class="badge conf">CVPR 2026</span> <span class="cite">332 Citations · 4.1k GitHub Stars</span></p>
+          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
+          <p class="pub-venue"><span class="badge contrib">Core Contributor</span> <span class="badge conf">CVPR 2026</span> <span class="cite">332 Citations · 4.1k GitHub Stars</span></p>
           <p class="pub-tldr">A unified multimodal generation model; I built the in-context data pipeline and led the progressive Flow-GRPO RL alignment.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/OmniGen2/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/VectorSpaceLab/OmniGen2" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/OmniGen2/OmniGen2" target="_blank" rel="noopener">Model</a></p>
         </div>
@@ -163,8 +166,8 @@
         <div class="pub-thumb"><img src="assets/fig_tempflow.png" alt="TempFlow-GRPO"></div>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2508.04324" target="_blank" rel="noopener">TempFlow-GRPO: When Timing Matters for GRPO in Flow Models</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong> (Core Contributor), et al.</p>
-          <p class="pub-venue"><span class="badge conf">ICLR 2026</span></p>
+          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
+          <p class="pub-venue"><span class="badge contrib">Core Contributor</span> <span class="badge conf">ICLR 2026</span></p>
           <p class="pub-tldr">A temporally-aware RL framework for flow-matching models, using trajectory branching and noise-aware weighting for stabler alignment.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2508.04324" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://tempflowgrpo.github.io/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/Shredded-Pork/TempFlow-GRPO" target="_blank" rel="noopener">Code</a></p>
         </div>
@@ -175,7 +178,7 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2602.05380" target="_blank" rel="noopener">SAIL: Self-Amplified Iterative Learning for Diffusion Model Alignment</a></p>
           <p class="pub-authors"><strong>Wanli Li</strong><span class="cofirst">*</span>, et al.</p>
-          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> ICLR 2026</p>
+          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> <span class="badge conf">ICLR 2026</span></p>
           <p class="pub-tldr">A self-amplified iterative framework that aligns diffusion models from minimal seed data, letting the model act as its own teacher.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2602.05380" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://openreview.net/forum?id=wKdg1DDOrW" target="_blank" rel="noopener">OpenReview</a></p>
         </div>
