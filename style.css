@@ -229,7 +229,22 @@ a:hover { border-bottom-color: var(--accent); }
   color: var(--soft);
 }
 .nowrap { white-space: nowrap; }
-
+.bio-org {
+  display: inline;
+}
+.bio-org img {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.28em;
+  vertical-align: -0.18em;
+  object-fit: contain;
+  display: inline;
+}
+.bio-school img {
+  width: 1.35em;
+  height: 1.35em;
+  vertical-align: -0.22em;
+}
 /* ---------- SECTION HEADERS ---------- */
 h2 {
   font-family: var(--font-display);

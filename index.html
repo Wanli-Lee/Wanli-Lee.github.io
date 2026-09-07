@@ -49,9 +49,9 @@
 
   <section class="about" id="about">
     <p class="bio">
-      I am a first-year PhD candidate at the <strong>State Key Laboratory of CAD&amp;CG</strong>,
-      <strong>Zhejiang University</strong>. I earned my B.Eng. in Artificial Intelligence at the
-      <strong>IIAU Lab</strong>, <strong>Dalian University of Technology</strong>, in 2025.
+      I am a second-year PhD candidate at the <strong>State Key Laboratory of CAD&amp;CG</strong>,
+      <span class="bio-org bio-school"><img src="assets/zju.png" alt="Zhejiang University logo"><strong>Zhejiang University.</strong></span> I earned my B.Eng. in Artificial Intelligence at the
+      <strong>IIAU Lab</strong>, <span class="bio-org bio-school"><img src="assets/dlut.png" alt="Dalian University of Technology logo"><strong>Dalian University of Technology,</strong></span> in 2025.
     </p>
     <p class="bio">
       My research centers on agents that act in real environments, in particular
@@ -63,8 +63,9 @@
     </p>
     <p class="bio">
       Currently a research intern with the
-      <strong><span class="nowrap">Qwen Team</span> at Alibaba</strong>,
-      previously at <strong><span class="nowrap">MSRA</span></strong> and <strong>BAAI</strong>.
+      <span class="bio-org"><img src="assets/qwen.png" alt="Qwen logo"><strong>Qwen Team</strong></span> at Alibaba, working on General
+      <strong>Computer-Use Agents</strong>.
+      Previously at <span class="bio-org"><img src="assets/msra.svg" alt="Microsoft Research Asia logo"><strong>MSRA.</strong></span>
       I'm also a community collaborator at
       <a href="https://x.com/webagentlab" target="_blank" rel="noopener"><strong>WebAgentLab</strong></a>,
       an open-source community around GUI and Computer-Use Agents.
@@ -157,7 +158,7 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">OmniGen2: Towards Instruction-Aligned Multimodal Generation</a></p>
           <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge contrib">Core Contributor</span> <span class="badge conf">CVPR 2026</span> <span class="cite">332 Citations · 4.1k GitHub Stars</span></p>
+          <p class="pub-venue"><span class="badge contrib">Core Contributor</span> <span class="badge conf">CVPR 2026</span> <span class="cite"><span data-omnigen-stat="citations">332</span> Citations · <span data-omnigen-stat="stars">4.1k</span> GitHub Stars</span></p>
           <p class="pub-tldr">A unified multimodal generation model; I built the in-context data pipeline and led the progressive Flow-GRPO RL alignment.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/OmniGen2/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/VectorSpaceLab/OmniGen2" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/OmniGen2/OmniGen2" target="_blank" rel="noopener">Model</a></p>
         </div>
@@ -333,6 +334,22 @@
       const forks = document.querySelector('[data-loopx-stat="forks"]');
       if (stars) stars.textContent = repo.stargazers_count.toLocaleString();
       if (forks) forks.textContent = repo.forks_count.toLocaleString();
+    })
+    .catch(() => {});
+
+  fetch("https://api.github.com/repos/VectorSpaceLab/OmniGen2")
+    .then(response => response.ok ? response.json() : Promise.reject(response))
+    .then(repo => {
+      const stars = document.querySelector('[data-omnigen-stat="stars"]');
+      if (stars) stars.textContent = repo.stargazers_count.toLocaleString();
+    })
+    .catch(() => {});
+
+  fetch("https://api.semanticscholar.org/graph/v1/paper/ARXIV:2506.18871?fields=citationCount")
+    .then(response => response.ok ? response.json() : Promise.reject(response))
+    .then(paper => {
+      const citations = document.querySelector('[data-omnigen-stat="citations"]');
+      if (citations && Number.isFinite(paper.citationCount)) citations.textContent = paper.citationCount.toLocaleString();
     })
     .catch(() => {});
 </script>
