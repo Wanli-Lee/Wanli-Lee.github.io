@@ -19,6 +19,7 @@
     <a href="#news">News</a>
     <a href="#research">Research</a>
     <a href="#talks">Talks</a>
+    <a href="#opensource">Open Source</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
@@ -141,7 +142,7 @@
           <p class="pub-authors"><strong>Wanli Li</strong><span class="cofirst">*</span>, et al.</p>
           <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> <span class="badge conf">EMNLP 2026</span></p>
           <p class="pub-tldr">A training-free KV cache compression for GUI agents, giving 2.45× decoding speedup and +7.3% success on long-horizon tasks.</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">Paper</a></p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://github.com/BouwenZhou/ST-Lite" target="_blank" rel="noopener">Code</a></p>
         </div>
       </div>
     </div>
@@ -202,6 +203,19 @@
     </ul>
   </section>
 
+  <section class="opensource" id="opensource">
+    <h2>Open Source</h2>
+    <div class="opensource-item">
+      <div class="opensource-logo"><img src="assets/loopx-logo.png" alt="LoopX logo"></div>
+      <div class="opensource-head">
+        <h3><a href="https://github.com/huangruiteng/loopx" target="_blank" rel="noopener">LoopX</a></h3>
+        <span class="opensource-stats" aria-label="LoopX GitHub statistics"><span data-loopx-stat="stars">5.7k</span> stars · <span data-loopx-stat="forks">511</span> forks</span>
+      </div>
+      <p class="opensource-role">Core Contributor · Agent Control Plane</p>
+      <p class="opensource-desc">A durable, governed control plane for long-horizon coding agents across Codex, Claude Code, and other harnesses, supporting academic-grade evaluations and new insights into long-horizon harness design and agent behavior.</p>
+    </div>
+  </section>
+
   <section class="experience" id="experience">
     <h2>Experience</h2>
 
@@ -240,7 +254,6 @@
         </div>
         <p class="exp-role">Research Intern · Agentic RL Team — First Author / Project Lead</p>
         <p class="exp-desc">Led <strong>LiteResearcher</strong>, an open-source SOTA 4B deep-research model trained with scalable Agentic RL over a local search world.</p>
-        <p class="exp-mentor">Advisors: <a href="https://bo-zhang.me/" target="_blank" rel="noopener">Bo Zhang</a>, <a href="https://panzhang0212.github.io/" target="_blank" rel="noopener">Pan Zhang</a></p>
       </div>
     </div>
 
@@ -287,7 +300,7 @@
     <ul class="edu">
       <li>
         <span class="edu-logo"><img src="assets/zju.png" alt="ZJU"></span>
-        <span class="edu-text"><strong>Zhejiang University</strong> — PhD in Computer Science, State Key Lab of CAD&amp;CG <span class="edu-date">2025 – Present</span><br><span class="edu-advisor">Advised by <a href="https://bo-zhang.me/" target="_blank" rel="noopener">Prof. Bo Zhang</a></span></span>
+        <span class="edu-text"><strong>Zhejiang University</strong> — PhD in Computer Science, State Key Lab of CAD&amp;CG <span class="edu-date">2025 – Present</span><br><span class="edu-advisor">Advised by Prof. Wei Chen</span></span>
       </li>
       <li>
         <span class="edu-logo"><img src="assets/dlut.png" alt="DLUT"></span>
@@ -312,5 +325,16 @@
 
   </main>
 </div>
+<script>
+  fetch("https://api.github.com/repos/huangruiteng/loopx")
+    .then(response => response.ok ? response.json() : Promise.reject(response))
+    .then(repo => {
+      const stars = document.querySelector('[data-loopx-stat="stars"]');
+      const forks = document.querySelector('[data-loopx-stat="forks"]');
+      if (stars) stars.textContent = repo.stargazers_count.toLocaleString();
+      if (forks) forks.textContent = repo.forks_count.toLocaleString();
+    })
+    .catch(() => {});
+</script>
 </body>
 </html>
