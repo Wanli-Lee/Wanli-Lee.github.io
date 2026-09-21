@@ -8,22 +8,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Fraunces:ital,opsz,wght,WONK@0,9..144,300..900,0;0,9..144,300..900,1;1,9..144,300..900,0&family=Newsreader:ital,opsz,wght@0,6..72,200..600;1,6..72,200..600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=33">
+<link rel="stylesheet" href="style.css?v=42">
 </head>
 <body>
 
-<nav class="topnav">
+<nav class="topnav" aria-label="Main navigation">
   <div class="topnav-inner">
     <a href="#top" class="nav-home">Homepage</a>
     <a href="#about">About</a>
     <a href="#news">News</a>
     <a href="#research">Research</a>
     <a href="#talks">Talks</a>
-    <a href="#opensource">Open Source</a>
     <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#honors">Honors</a>
+    <details class="nav-more">
+      <summary>More</summary>
+      <div class="nav-more-links">
+        <a href="#opensource">Open Source</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors</a>
+      </div>
+    </details>
   </div>
 </nav>
 
@@ -49,75 +54,86 @@
 
   <section class="about" id="about">
     <p class="bio">
-      I am a second-year PhD candidate at the <strong>State Key Laboratory of CAD&amp;CG</strong>,
+      I am a second-year PhD student at the <strong>State Key Laboratory of CAD&amp;CG</strong>,
       <span class="bio-org bio-school"><img src="assets/zju.png" alt="Zhejiang University logo"><strong>Zhejiang University.</strong></span> I earned my B.Eng. in Artificial Intelligence at the
       <strong>IIAU Lab</strong>, <span class="bio-org bio-school"><img src="assets/dlut.png" alt="Dalian University of Technology logo"><strong>Dalian University of Technology,</strong></span> in 2025.
     </p>
     <p class="bio">
-      My research centers on agents that act in real environments, in particular
-      <strong>Computer-Use Agents</strong> that move across GUI, CLI and code.
-      I work on <strong>Agentic RL</strong> training for these agents, spanning
-      <strong>algorithm design</strong> and <strong>infrastructure</strong>.
-      My research goal is to build agents that can reason, learn, and act reliably across previously unseen real-world environments.
-      I am also interested in <strong>multimodal intelligence</strong>, from generation and understanding
-      to world models and VLA.
+      I am now working on <strong>agentic foundation models</strong>, especially <strong>computer-use agent models</strong>.
+      I also work on <strong>Agentic RL</strong> algorithms and training infrastructure.
+      My goal is to build agents that learn and act reliably in unfamiliar real-world environments.
+      I am also interested in <strong>multimodal generation and alignment</strong>.
     </p>
     <p class="bio">
-      Currently a research intern with the
-      <span class="bio-org"><img src="assets/qwen.png" alt="Qwen logo"><strong>Qwen Team</strong></span> at Alibaba, working on General
-      <strong>Computer-Use Agents</strong>.
+      I am currently a research intern with the
+      <span class="bio-org"><img src="assets/qwen.png" alt="Qwen logo"><strong>Qwen Team</strong></span> at Alibaba, working on computer-use agents.
       Previously at <span class="bio-org"><img src="assets/msra.svg" alt="Microsoft Research Asia logo"><strong>MSRA.</strong></span>
       I'm also a community collaborator at
       <a href="https://x.com/webagentlab" target="_blank" rel="noopener"><strong>WebAgentLab</strong></a>,
-      an open-source community around GUI and Computer-Use Agents.
+      an open-source community for computer-use agents.
     </p>
     <p class="bio bio-cta">
-      I'm always open to research collaboration. Feel free to <a href="mailto:wanli_li@zju.edu.cn">reach out</a> if you'd like to work together.
+      Open to research collaborations — feel free to <a href="mailto:wanli_li@zju.edu.cn">get in touch</a>.
     </p>
   </section>
 
   <section class="news" id="news">
     <h2>News</h2>
     <ul>
-      <li><span class="date">2026.09</span> <span>Released <a href="#recreationworld"><em>RecreationWorld</em></a> for training and evaluating hybrid computer-use agents.</span></li>
-      <li><span class="date">2026.08</span> <em>WeaveBench</em> and <em>ST-Lite</em> accepted by <strong>EMNLP 2026</strong>.</li>
-      <li><span class="date">2026.08</span> Started a research internship with the <strong>Qwen Team</strong> at Alibaba.</li>
-      <li><span class="date">2026.07</span> <em>LiteResearcher</em> accepted by <strong>COLM 2026</strong>.</li>
-      <li><span class="date">2026.03</span> Started a research internship at <strong>Microsoft Research Asia</strong>.</li>
-      <li><span class="date">2026.02</span> <em>OmniGen2</em> accepted by <strong>CVPR 2026</strong>.</li>
-      <li><span class="date">2026.01</span> <em>SAIL</em> and <em>TempFlow-GRPO</em> accepted by <strong>ICLR 2026</strong>.</li>
-      <li><span class="date">2025.09</span> Started my PhD at <strong>Zhejiang University</strong>.</li>
+      <li><span class="date">2026.09</span> <span class="news-text">Released <a href="#recreationworld"><strong class="news-paper">RecreationWorld</strong></a> for training and evaluating hybrid computer-use agents.</span></li>
+      <li><span class="date">2026.08</span> <span class="news-text"><a href="#weavebench"><strong class="news-paper">WeaveBench</strong></a> and <a href="#stlite"><strong class="news-paper">ST-Lite</strong></a> accepted by <span class="news-venue">EMNLP 2026</span>.</span></li>
+      <li><span class="date">2026.08</span> <span class="news-text">Started a research internship with the <strong>Qwen Team</strong> at Alibaba.</span></li>
+      <li><span class="date">2026.07</span> <span class="news-text"><a href="#litere"><strong class="news-paper">LiteResearcher</strong></a> accepted by <span class="news-venue">COLM 2026</span>.</span></li>
+      <li><span class="date">2026.02</span> <span class="news-text"><a href="#omnigen2"><strong class="news-paper">OmniGen2</strong></a> accepted by <span class="news-venue">CVPR 2026</span>.</span></li>
+      <li><span class="date">2026.01</span> <span class="news-text"><a href="#sail"><strong class="news-paper">SAIL</strong></a> and <a href="#tempflow"><strong class="news-paper">TempFlow-GRPO</strong></a> accepted by <span class="news-venue">ICLR 2026</span>.</span></li>
     </ul>
+    <details class="news-archive">
+      <summary>Earlier milestones</summary>
+      <ul>
+        <li><span class="date">2026.03</span> <span class="news-text">Started a research internship at <strong>Microsoft Research Asia</strong>.</span></li>
+        <li><span class="date">2025.09</span> <span class="news-text">Started my PhD at <strong>Zhejiang University</strong>.</span></li>
+      </ul>
+    </details>
   </section>
 
   <section class="pubs" id="research">
     <h2>Research</h2>
-    <p class="research-note">My work spans three threads. <span class="cofirst">*</span> denotes equal contribution.</p>
+    <p class="research-note">My work spans three threads.</p>
 
     <!-- THREAD 1 -->
     <div class="thread">
       <h3 class="thread-title">Agentic Reinforcement Learning</h3>
       <p class="thread-desc">Training agents to reason and act over long horizons with scalable, stable RL.</p>
 
-      <div class="pub">
-        <div class="pub-thumb"><img src="assets/fig_litere.png" alt="LiteResearcher"></div>
+      <div class="pub" id="litere">
+        <a class="pub-thumb" href="assets/research/litere-figure.webp" data-figure-title="LiteResearcher" data-figure-caption="Figure 2 · System architecture" aria-label="Enlarge LiteResearcher figure">
+          <img src="assets/research/litere-preview.webp" alt="System architecture: corpus synthesis and reinforcement curriculum learning." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2604.17931" target="_blank" rel="noopener">LiteResearcher: Scalable Agentic RL Training for Deep Research Agents</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge first">First Author</span> <span class="badge conf">COLM 2026</span></p>
+          <p class="pub-authors"><span class="pub-author"><strong>Wanli Li</strong></span>, <span class="pub-author">Bince Qu</span>, <span class="pub-author">Bo Pan</span>, <span class="pub-author">Jianyu Zhang</span>, <span class="pub-author">Zheng Liu</span>, <span class="pub-author">Pan Zhang</span>, <span class="pub-author">Wei Chen</span>, <span class="pub-author">Bo Zhang</span></p>
+          <p class="pub-venue"><span class="venue-name">COLM 2026</span> <span class="pub-role pub-role--lead">First author</span></p>
           <p class="pub-tldr">A scalable Agentic RL framework whose 4B model reaches open-source SOTA on GAIA (71.3%) and Xbench-DS (78.0%), rivaling commercial systems.</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2604.17931" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://simplex-ai-inc.github.io/LiteResearcher/" target="_blank" rel="noopener">Webpage</a> <span class="sep">·</span> <a href="https://github.com/simplex-ai-inc/LiteResearcher" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B" target="_blank" rel="noopener">Model</a> <span class="sep">·</span> <a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B-SFT" target="_blank" rel="noopener">SFT Model</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Data" target="_blank" rel="noopener">Data</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Corpus" target="_blank" rel="noopener">Corpus</a></p>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2604.17931" target="_blank" rel="noopener">Paper</a> <a href="https://simplex-ai-inc.github.io/LiteResearcher/" target="_blank" rel="noopener">Project</a> <a href="https://github.com/simplex-ai-inc/LiteResearcher" target="_blank" rel="noopener">Code</a> <a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B" target="_blank" rel="noopener">Model</a> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Data" target="_blank" rel="noopener">Data</a></div>
+          <details class="pub-extra-links">
+            <summary>More resources</summary>
+            <div class="pub-links"><a href="https://huggingface.co/simplex-ai-inc/LiteResearcher-4B-SFT" target="_blank" rel="noopener">SFT Model</a> <a href="https://huggingface.co/datasets/simplex-ai-inc/LiteResearcher-Corpus" target="_blank" rel="noopener">Corpus</a></div>
+          </details>
         </div>
       </div>
 
       <div class="pub">
-        <div class="pub-thumb"><img src="assets/fig_arex.png" alt="AREX"></div>
+        <a class="pub-thumb" href="assets/research/arex-figure.webp" data-figure-title="AREX" data-figure-caption="Figure 2 · Recursive self-improvement" aria-label="Enlarge AREX figure">
+          <img src="assets/research/arex-preview.webp" alt="The outer self-improvement loop and inner research loop of AREX." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2607.21461" target="_blank" rel="noopener">AREX: Towards a Recursively Self-Improving Agent for Deep Research</a></p>
-          <p class="pub-authors">Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang, &hellip;, <strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge contrib">Contributor</span> <span class="badge report">Tech Report</span></p>
-          <p class="pub-tldr">A recursively self-improving deep research agent that audits its own answer constraint-wise and relaunches targeted research; the 4B and 122B-A10B models lead comparable-scale baselines on BrowseComp, WideSearch and HLE.</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2607.21461" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/arex-model/" target="_blank" rel="noopener">Homepage</a> <span class="sep">·</span> <a href="https://arex-research.com" target="_blank" rel="noopener">App</a> <span class="sep">·</span> <a href="https://huggingface.co/collections/BAAI/arex" target="_blank" rel="noopener">Models</a></p>
+          <p class="pub-authors"><span class="pub-author">Shuqi Lu</span>, <span class="pub-author">Chaofan Li</span>, <span class="pub-author">Kun Luo</span>, &hellip;, <span class="pub-author"><strong>Wanli Li</strong></span>, et al.</p>
+          <p class="pub-venue"><span class="venue-name">Technical report</span> <span class="pub-role">Contributor</span></p>
+          <p class="pub-tldr">A deep research agent that checks its answers and launches targeted follow-up research, outperforming comparable-scale baselines on BrowseComp, WideSearch and HLE.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2607.21461" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/arex-model/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://arex-research.com" target="_blank" rel="noopener">App</a> <span class="sep">·</span> <a href="https://huggingface.co/collections/BAAI/arex" target="_blank" rel="noopener">Models</a></p>
         </div>
       </div>
     </div>
@@ -127,35 +143,44 @@
       <h3 class="thread-title">Generalist Computer-Use Agents</h3>
       <p class="thread-desc">Agents that operate real desktops across GUI, CLI and code — and how we evaluate them.</p>
 
-      <div class="pub">
-        <div class="pub-thumb"><img src="assets/fig_weave.png" alt="WeaveBench"></div>
+      <div class="pub" id="weavebench">
+        <a class="pub-thumb" href="assets/research/weave-figure.webp" data-figure-title="WeaveBench" data-figure-caption="Figure 3 · Dataset overview" aria-label="Enlarge WeaveBench figure">
+          <img src="assets/research/weave-preview.webp" alt="WeaveBench task taxonomy across eight real-world domains." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2606.09426" target="_blank" rel="noopener">WeaveBench: Benchmarking Hybrid-Interface Computer-Use Agents</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge first">First Author</span> <span class="badge conf">EMNLP 2026</span></p>
+          <p class="pub-authors"><span class="pub-author"><strong>Wanli Li</strong></span>, <span class="pub-author">Bowen Zhou</span>, <span class="pub-author">Yunyao Yu</span>, <span class="pub-author">Zhou Xu</span>, <span class="pub-author">Yifan Yang</span>, <span class="pub-author">Dongsheng Li</span>, <span class="pub-author">Caihua Shan</span></p>
+          <p class="pub-venue"><span class="venue-name">EMNLP 2026</span> <span class="pub-role pub-role--lead">First author</span></p>
           <p class="pub-tldr">A long-horizon benchmark of 114 hybrid-interface tasks forcing GUI and CLI/code to cooperate — the best agent reaches only 41.2% success.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2606.09426" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://weavebench.github.io/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/wanlilll/WeaveBench" target="_blank" rel="noopener">Dataset</a></p>
         </div>
       </div>
 
-      <div class="pub">
-        <div class="pub-thumb"><img src="assets/fig_stlite.png" alt="ST-Lite"></div>
+      <div class="pub pub--overview" id="stlite">
+        <a class="pub-thumb" href="assets/research/stlite-figure.webp?v=2" data-figure-title="ST-Lite" data-figure-caption="Figure 1 · Original paper overview: existing cache-compression methods and ST-Lite." aria-label="Enlarge ST-Lite figure">
+          <img src="assets/research/stlite-preview.webp?v=2" alt="ST-Lite Figure 1: limitations of existing methods compared with component-centric spatial saliency and trajectory-aware semantic gating." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">ST-Lite: Training-Free KV Cache Compression for Efficient GUI Agents</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong><span class="cofirst">*</span>, et al.</p>
-          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> <span class="badge conf">EMNLP 2026</span></p>
+          <p class="pub-authors"><span class="pub-author">Bowen Zhou<span class="cofirst" title="Equal contribution">*</span></span>, <span class="pub-author">Zhou Xu<span class="cofirst" title="Equal contribution">*</span></span>, <span class="pub-author"><strong>Wanli Li</strong><span class="cofirst" title="Equal contribution">*</span></span>, <span class="pub-author">Jingyu Xiao</span>, <span class="pub-author">Pingan Gan</span>, <span class="pub-author">Haoqian Wang</span></p>
+          <p class="pub-venue"><span class="venue-name">EMNLP 2026</span> <span class="pub-role pub-role--lead">Co-first author</span></p>
           <p class="pub-tldr">A training-free KV cache compression for GUI agents, giving 2.45× decoding speedup and +7.3% success on long-horizon tasks.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2603.00188" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://github.com/BouwenZhou/ST-Lite" target="_blank" rel="noopener">Code</a></p>
         </div>
       </div>
 
-      <div class="pub" id="recreationworld">
-        <div class="pub-thumb"><img src="assets/fig_recreationworld.png" alt="RecreationWorld: five-platform environments, training transfer, and RecreationBench evaluation"></div>
+      <div class="pub pub--overview" id="recreationworld">
+        <a class="pub-thumb" href="assets/research/recreationworld-figure.webp?v=2" data-figure-title="RecreationWorld" data-figure-caption="Figure 1 · Complete official overview. The homepage preview shows the first two panels: five-platform tasks and training gains." aria-label="Enlarge RecreationWorld figure">
+          <img src="assets/research/recreationworld-preview.webp?v=3" alt="RecreationWorld overview, panels A and B: applications on five platforms and transfer gains from training." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2609.22000" target="_blank" rel="noopener">RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents</a></p>
-          <p class="pub-authors">Shuai Bai, Jiayong Deng, Yikun Fu, &hellip;, <strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge contrib">Contributor</span> <span class="badge report">Tech Report</span></p>
-          <p class="pub-tldr">A five-platform framework for training and evaluating hybrid computer-use agents through software recreation, with verifiable rewards and a 250-task benchmark spanning Ubuntu, macOS, Windows, Android and Web.</p>
+          <p class="pub-authors"><span class="pub-author">Shuai Bai</span>, <span class="pub-author">Jiayong Deng</span>, <span class="pub-author">Yikun Fu</span>, &hellip;, <span class="pub-author"><strong>Wanli Li</strong></span>, et al.</p>
+          <p class="pub-venue"><span class="venue-name">Technical report</span> <span class="pub-role">Contributor</span></p>
+          <p class="pub-tldr">Software recreation provides scalable training environments with verifiable rewards and a 250-task benchmark across Ubuntu, macOS, Windows, Android and Web.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2609.22000" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://recreation-bench.cc" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/QwenLM/RecreationWorld" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/datasets/Qwen/RecreationBench" target="_blank" rel="noopener">Dataset</a></p>
         </div>
       </div>
@@ -166,34 +191,43 @@
       <h3 class="thread-title">Multimodal Generation</h3>
       <p class="thread-desc">Unified multimodal models and RL alignment for generation.</p>
 
-      <div class="pub">
-        <div class="pub-thumb"><img src="assets/fig_omnigen2.png" alt="OmniGen2"></div>
+      <div class="pub" id="omnigen2">
+        <a class="pub-thumb" href="assets/research/omnigen2-figure.webp" data-figure-title="OmniGen2" data-figure-caption="Figure 6 · Versatile image editing" aria-label="Enlarge OmniGen2 figure">
+          <img src="assets/research/omnigen2-preview.webp" alt="OmniGen2 image editing examples showing changes in style, color, objects, and accessories." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">OmniGen2: Towards Instruction-Aligned Multimodal Generation</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge contrib">Core Contributor</span> <span class="badge conf">CVPR 2026</span> <span class="cite"><span data-omnigen-stat="citations">332</span> Citations · <span data-omnigen-stat="stars">4.1k</span> GitHub Stars</span></p>
+          <p class="pub-authors"><span class="pub-author">Chenyuan Wu</span>, <span class="pub-author">Jiahao Wang</span>, <span class="pub-author">Pengfei Zheng</span>, &hellip;, <span class="pub-author"><strong>Wanli Li</strong></span>, et al.</p>
+          <p class="pub-venue"><span class="venue-name">CVPR 2026</span> <span class="pub-role">Core contributor</span> <span class="cite"><span data-omnigen-stat="citations">332</span> Citations · <span data-omnigen-stat="stars">4.1k</span> GitHub Stars</span></p>
           <p class="pub-tldr">A unified multimodal generation model; I built the in-context data pipeline and led the progressive Flow-GRPO RL alignment.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2506.18871" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://vectorspacelab.github.io/OmniGen2/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/VectorSpaceLab/OmniGen2" target="_blank" rel="noopener">Code</a> <span class="sep">·</span> <a href="https://huggingface.co/OmniGen2/OmniGen2" target="_blank" rel="noopener">Model</a></p>
         </div>
       </div>
 
-      <div class="pub">
-        <div class="pub-thumb"><img src="assets/fig_tempflow.png" alt="TempFlow-GRPO"></div>
+      <div class="pub" id="tempflow">
+        <a class="pub-thumb" href="assets/research/tempflow-figure.webp" data-figure-title="TempFlow-GRPO" data-figure-caption="Figure 1 · Generated examples" aria-label="Enlarge TempFlow-GRPO figure">
+          <img src="assets/research/tempflow-preview.webp" alt="Images generated by TempFlow-GRPO with FLUX.1-dev." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2508.04324" target="_blank" rel="noopener">TempFlow-GRPO: When Timing Matters for GRPO in Flow Models</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong>, et al.</p>
-          <p class="pub-venue"><span class="badge contrib">Core Contributor</span> <span class="badge conf">ICLR 2026</span></p>
+          <p class="pub-authors"><span class="pub-author">Xiaoxuan He</span>, <span class="pub-author">Siming Fu</span>, <span class="pub-author">Yuke Zhao</span>, <span class="pub-author"><strong>Wanli Li</strong></span>, <span class="pub-author">Jian Yang</span>, <span class="pub-author">Dacheng Yin</span>, <span class="pub-author">Fengyun Rao</span>, <span class="pub-author">Bo Zhang</span></p>
+          <p class="pub-venue"><span class="venue-name">ICLR 2026</span> <span class="pub-role">Core contributor</span></p>
           <p class="pub-tldr">A temporally-aware RL framework for flow-matching models, using trajectory branching and noise-aware weighting for stabler alignment.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2508.04324" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://tempflowgrpo.github.io/" target="_blank" rel="noopener">Project</a> <span class="sep">·</span> <a href="https://github.com/Shredded-Pork/TempFlow-GRPO" target="_blank" rel="noopener">Code</a></p>
         </div>
       </div>
 
-      <div class="pub">
-        <div class="pub-thumb"><img src="assets/fig_sail.png" alt="SAIL"></div>
+      <div class="pub" id="sail">
+        <a class="pub-thumb" href="assets/research/sail-figure.webp" data-figure-title="SAIL" data-figure-caption="Figure 4 · Qualitative comparison" aria-label="Enlarge SAIL figure">
+          <img src="assets/research/sail-preview.webp" alt="Progressive refinement from SDXL through successive SAIL iterations." loading="lazy" decoding="async">
+          <span class="pub-expand" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2H2v4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></span>
+        </a>
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2602.05380" target="_blank" rel="noopener">SAIL: Self-Amplified Iterative Learning for Diffusion Model Alignment</a></p>
-          <p class="pub-authors"><strong>Wanli Li</strong><span class="cofirst">*</span>, et al.</p>
-          <p class="pub-venue"><span class="badge cofirst-b">Co-first</span> <span class="badge conf">ICLR 2026</span></p>
+          <p class="pub-authors"><span class="pub-author">Xiaoxuan He</span>, <span class="pub-author">Siming Fu</span>, <span class="pub-author"><strong>Wanli Li</strong></span>, <span class="pub-author">Zhiyuan Li</span>, <span class="pub-author">Dacheng Yin</span>, <span class="pub-author">Kang Rong</span>, <span class="pub-author">Fengyun Rao</span>, <span class="pub-author">Bo Zhang</span></p>
+          <p class="pub-venue"><span class="venue-name">ICLR 2026</span> <span class="pub-role">Core contributor</span></p>
           <p class="pub-tldr">A self-amplified iterative framework that aligns diffusion models from minimal seed data, letting the model act as its own teacher.</p>
           <p class="pub-links"><a href="https://arxiv.org/abs/2602.05380" target="_blank" rel="noopener">Paper</a> <span class="sep">·</span> <a href="https://openreview.net/forum?id=wKdg1DDOrW" target="_blank" rel="noopener">OpenReview</a></p>
         </div>
@@ -296,24 +330,16 @@
   <section class="skills" id="skills">
     <h2>Skills</h2>
     <div class="skill-row">
-      <span class="skill-key">Research</span>
-      <span class="skill-val">Large-scale Model Training · Agentic RL · Agent Framework Development · Inference Optimization</span>
+      <span class="skill-key">Training</span>
+      <span class="skill-val">Large-scale model training and Agentic RL · PyTorch, veRL, slime</span>
     </div>
     <div class="skill-row">
-      <span class="skill-key">Languages</span>
-      <span class="skill-val">Python · C/C++ · LaTeX</span>
+      <span class="skill-key">Systems</span>
+      <span class="skill-val">Agent frameworks, VM sandboxes and large-scale async rollouts · Docker, Kubernetes</span>
     </div>
     <div class="skill-row">
-      <span class="skill-key">Frameworks</span>
-      <span class="skill-val">PyTorch · veRL · slime · vLLM · SGLang · DeepSpeed · TensorRT-LLM · Docker</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-key">Infra</span>
-      <span class="skill-val">Kubernetes · Milvus · PostgreSQL · BGE-M3 · large-scale async rollout</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-key">AI Tooling</span>
-      <span class="skill-val">Claude Code · Codex · Cursor · GitHub Copilot — rebuilding research &amp; engineering workflows around LLM agents</span>
+      <span class="skill-key">Inference</span>
+      <span class="skill-val">Efficient inference and deployment · vLLM, SGLang, TensorRT-LLM</span>
     </div>
   </section>
 
@@ -342,11 +368,24 @@
   </section>
 
   <footer>
-    <p>Last updated September 2026 · Built with plain HTML/CSS.</p>
+    <p>Last updated September 2026</p>
   </footer>
 
   </main>
 </div>
+<dialog class="figure-dialog" aria-labelledby="figure-title">
+  <div class="figure-dialog-head">
+    <h3 id="figure-title"></h3>
+    <form method="dialog"><button class="figure-close" aria-label="Close figure" autofocus>&times;</button></form>
+  </div>
+  <img class="figure-dialog-image" alt="">
+  <div class="figure-dialog-foot">
+    <span class="figure-caption"></span>
+    <a class="figure-paper" target="_blank" rel="noopener">View paper &nearr;</a>
+  </div>
+</dialog>
+<script src="research-gallery.js"></script>
+<script src="navigation.js"></script>
 <script>
   fetch("https://api.github.com/repos/huangruiteng/loopx")
     .then(response => response.ok ? response.json() : Promise.reject(response))

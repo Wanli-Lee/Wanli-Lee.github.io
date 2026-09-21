@@ -1,0 +1,317 @@
+{
+  "checked_on": "2026-09-21",
+  "publications": [
+    {
+      "key": "litere",
+      "source": "https://arxiv.org/pdf/2604.17931v1",
+      "authors": [
+        "Wanli Li",
+        "Bince Qu",
+        "Bo Pan",
+        "Jianyu Zhang",
+        "Zheng Liu",
+        "Pan Zhang",
+        "Wei Chen",
+        "Bo Zhang"
+      ],
+      "equal_contribution": [
+        "Wanli Li",
+        "Bince Qu"
+      ],
+      "note": "Author order explicitly follows arXiv v1, as requested by Wanli Li.",
+      "display": {
+        "authors": [
+          "Wanli Li",
+          "Bince Qu",
+          "Bo Pan",
+          "Jianyu Zhang",
+          "Zheng Liu",
+          "Pan Zhang",
+          "Wei Chen",
+          "Bo Zhang"
+        ],
+        "abbreviated": false,
+        "equal_contribution_markers": []
+      }
+    },
+    {
+      "key": "arex",
+      "source": "https://arxiv.org/abs/2607.21461",
+      "authors": [
+        "Shuqi Lu",
+        "Chaofan Li",
+        "Kun Luo",
+        "Zhang Zhang",
+        "Hui Wang",
+        "Hongwang Xiao",
+        "Lei Xiong",
+        "Jiahao Wang",
+        "Sen Wang",
+        "Xiyan Jiang",
+        "Wanli Li",
+        "Yuyang Hu",
+        "Hongjin Qian",
+        "Bingyu Yan",
+        "Jianlyu Chen",
+        "Ziyi Xia",
+        "Yingxia Shao",
+        "Kang Liu",
+        "Zhicheng Dou",
+        "Di He",
+        "Chaozhuo Li",
+        "Qiwei Ye",
+        "Zhongyuan Wang",
+        "Zheng Liu"
+      ],
+      "equal_contribution": [
+        "Shuqi Lu",
+        "Chaofan Li",
+        "Kun Luo"
+      ],
+      "note": "Order follows arXiv author metadata; names and equal-contribution marks cross-checked against the Contributions section on PDF page 20.",
+      "display": {
+        "authors": [
+          "Shuqi Lu",
+          "Chaofan Li",
+          "Kun Luo",
+          "Wanli Li"
+        ],
+        "abbreviated": true,
+        "equal_contribution_markers": []
+      }
+    },
+    {
+      "key": "weave",
+      "source": "https://arxiv.org/abs/2606.09426",
+      "authors": [
+        "Wanli Li",
+        "Bowen Zhou",
+        "Yunyao Yu",
+        "Zhou Xu",
+        "Yifan Yang",
+        "Dongsheng Li",
+        "Caihua Shan"
+      ],
+      "equal_contribution": [
+        "Wanli Li",
+        "Bowen Zhou"
+      ],
+      "note": "Author order and equal contribution verified against PDF page 1.",
+      "display": {
+        "authors": [
+          "Wanli Li",
+          "Bowen Zhou",
+          "Yunyao Yu",
+          "Zhou Xu",
+          "Yifan Yang",
+          "Dongsheng Li",
+          "Caihua Shan"
+        ],
+        "abbreviated": false,
+        "equal_contribution_markers": []
+      }
+    },
+    {
+      "key": "stlite",
+      "source": "https://arxiv.org/abs/2603.00188",
+      "authors": [
+        "Bowen Zhou",
+        "Zhou Xu",
+        "Wanli Li",
+        "Jingyu Xiao",
+        "Pingan Gan",
+        "Haoqian Wang"
+      ],
+      "equal_contribution": [
+        "Bowen Zhou",
+        "Zhou Xu",
+        "Wanli Li"
+      ],
+      "note": "Author order and equal contribution verified against PDF page 1.",
+      "display": {
+        "authors": [
+          "Bowen Zhou",
+          "Zhou Xu",
+          "Wanli Li",
+          "Jingyu Xiao",
+          "Pingan Gan",
+          "Haoqian Wang"
+        ],
+        "abbreviated": false,
+        "equal_contribution_markers": [
+          "Bowen Zhou",
+          "Zhou Xu",
+          "Wanli Li"
+        ]
+      }
+    },
+    {
+      "key": "recreationworld",
+      "source": "https://arxiv.org/abs/2609.22000",
+      "authors": [
+        "Shuai Bai",
+        "Jiayong Deng",
+        "Yikun Fu",
+        "Chang Gao",
+        "Xuhao Hu",
+        "Mianqiu Huang",
+        "Yizhen Jiang",
+        "Yuheng Jing",
+        "Dehui Kong",
+        "Keliang Li",
+        "Ning Li",
+        "Wanli Li",
+        "Dayiheng Liu",
+        "Dunjie Lu",
+        "Changwei Luo",
+        "Que Shen",
+        "Zheyuan Wang",
+        "Zijian Wang",
+        "Jie Wu",
+        "Gao Wu",
+        "Zhihui Xie",
+        "Rui Xie",
+        "Haiyang Xu",
+        "An Yang",
+        "Jiakang Yuan",
+        "Yanming Zhang",
+        "Jiajun Zhang",
+        "Xi Zhang",
+        "Zhenru Zhang",
+        "Zhuo Zhen",
+        "Mingkang Zhu",
+        "Bowen Zhou"
+      ],
+      "equal_contribution": [],
+      "note": "All 32 contributors follow PDF page 22 and arXiv metadata, rather than the differing project-website BibTeX.",
+      "display": {
+        "authors": [
+          "Shuai Bai",
+          "Jiayong Deng",
+          "Yikun Fu",
+          "Wanli Li"
+        ],
+        "abbreviated": true,
+        "equal_contribution_markers": []
+      }
+    },
+    {
+      "key": "omnigen2",
+      "source": "https://arxiv.org/abs/2506.18871",
+      "authors": [
+        "Chenyuan Wu",
+        "Jiahao Wang",
+        "Pengfei Zheng",
+        "Ruiran Yan",
+        "Shitao Xiao",
+        "Xin Luo",
+        "Yueze Wang",
+        "Wanli Li",
+        "Xiyan Jiang",
+        "Yexin Liu",
+        "Junjie Zhou",
+        "Ziyi Xia",
+        "Ze Liu",
+        "Chaofan Li",
+        "Haoge Deng",
+        "Kun Luo",
+        "Bo Zhang",
+        "Jiajun Zhang",
+        "Dong Liu",
+        "Defu Lian",
+        "Xinlong Wang",
+        "Zhongyuan Wang",
+        "Tiejun Huang",
+        "Zheng Liu"
+      ],
+      "equal_contribution": [
+        "Chenyuan Wu",
+        "Jiahao Wang",
+        "Pengfei Zheng",
+        "Ruiran Yan",
+        "Shitao Xiao",
+        "Xin Luo",
+        "Yueze Wang"
+      ],
+      "note": "All 24 names and their order follow the PDF title page; arXiv HTML metadata differs. Wanli Li is marked as a core contributor in the PDF.",
+      "display": {
+        "authors": [
+          "Chenyuan Wu",
+          "Jiahao Wang",
+          "Pengfei Zheng",
+          "Wanli Li"
+        ],
+        "abbreviated": true,
+        "equal_contribution_markers": []
+      }
+    },
+    {
+      "key": "tempflow",
+      "source": "https://arxiv.org/abs/2508.04324",
+      "authors": [
+        "Xiaoxuan He",
+        "Siming Fu",
+        "Yuke Zhao",
+        "Wanli Li",
+        "Jian Yang",
+        "Dacheng Yin",
+        "Fengyun Rao",
+        "Bo Zhang"
+      ],
+      "equal_contribution": [
+        "Xiaoxuan He",
+        "Siming Fu",
+        "Yuke Zhao"
+      ],
+      "note": "Author order and equal contribution verified against PDF page 1; the existing homepage core-contributor description is retained.",
+      "display": {
+        "authors": [
+          "Xiaoxuan He",
+          "Siming Fu",
+          "Yuke Zhao",
+          "Wanli Li",
+          "Jian Yang",
+          "Dacheng Yin",
+          "Fengyun Rao",
+          "Bo Zhang"
+        ],
+        "abbreviated": false,
+        "equal_contribution_markers": []
+      }
+    },
+    {
+      "key": "sail",
+      "source": "https://arxiv.org/abs/2602.05380",
+      "authors": [
+        "Xiaoxuan He",
+        "Siming Fu",
+        "Wanli Li",
+        "Zhiyuan Li",
+        "Dacheng Yin",
+        "Kang Rong",
+        "Fengyun Rao",
+        "Bo Zhang"
+      ],
+      "equal_contribution": [
+        "Xiaoxuan He",
+        "Siming Fu"
+      ],
+      "note": "Author order follows arXiv v2 PDF page 1. Core contributor is the homepage role explicitly specified by Wanli Li; no equal-contribution marker is displayed for this paper.",
+      "display": {
+        "authors": [
+          "Xiaoxuan He",
+          "Siming Fu",
+          "Wanli Li",
+          "Zhiyuan Li",
+          "Dacheng Yin",
+          "Kang Rong",
+          "Fengyun Rao",
+          "Bo Zhang"
+        ],
+        "abbreviated": false,
+        "equal_contribution_markers": [],
+        "role": "Core contributor"
+      }
+    }
+  ]
+}
